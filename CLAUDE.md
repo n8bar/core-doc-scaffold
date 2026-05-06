@@ -4,6 +4,8 @@ Always-loaded primer for **<PROJECT_NAME>** — <one-line tagline>.
 
 This file should hold whatever needs to be in context regardless of which part of the project you're working on. It sits above the spec/action split (PLAN.md / ProductSpec.md): not a spec, not an action list, just the primer.
 
+For doc-structure conventions (hierarchy, numbering, doc layout, deadlines), consult [`docs/README.md`](docs/README.md) when adding any doc or making a structural decision.
+
 <!--
 If you'll use LLM coding agents (Claude Code, Codex, Cursor, etc.) and you
 have framework-specific usage rules, drop them in `.agents/` and import here:

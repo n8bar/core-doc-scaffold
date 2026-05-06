@@ -11,6 +11,22 @@ Changes to the `core-doc-scaffold` template over time. When the pattern evolves,
 
 ## Changelog
 
+### 2026-05-06 — Slim PLAN, conventions moved to `docs/README.md`
+PLAN.md was carrying ~80 lines of structural reference (Doc Roles, hierarchy diagram, numbering, doc layout, specs-vs-actions, branches, repo, deadlines) ahead of operational content (Current, Milestones). Opening PLAN to "get to work" meant scrolling past the reference block every time.
+
+Changes:
+- New file: `docs/README.md` — owns Doc Roles, action-list hierarchy, the "stay at your altitude" rule, and conventions §1 Numbering, §2 Doc Layout, §3 Specs vs. Actions, §4 Milestone deadlines.
+- `docs/PLAN.md`: structural sections deleted; replaced with a 3-line pointer to `docs/README.md`, `../CLAUDE.md`, and `ProductSpec.md`. PLAN now opens directly to Deferred Decisions / Current / Milestones.
+- Old PLAN §4 Branches and §5 Repo deleted as duplicates — those rules already live canonically in `CLAUDE.md`'s Working Style and Branch & Repo sections.
+- `CLAUDE.md`: one-line pointer added directing agents to `docs/README.md` when adding any doc or making a structural decision.
+- Working Style gained two collaboration rules from a separate revision the same day: explicit-approval gate after writing an execution doc, and document-order execution with no skip-ahead without per-item approval.
+
+To retrofit:
+1. Create `docs/README.md` from the current scaffold.
+2. Delete the Doc Roles and Conventions blocks from your `docs/PLAN.md`; replace with the 3-line pointer.
+3. Add the `docs/README.md` pointer line to your `CLAUDE.md`.
+4. (Optional) Add the two new Working Style rules.
+
 ### 2026-05-06 — Initial template
 First version. Established:
 - The hierarchy: PLAN.md → Milestone → Arc → Worklist → Item → Subitem.

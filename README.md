@@ -11,7 +11,8 @@ Opinionated project documentation skeleton. Bootstrap a new repo with a coherent
 ```
 CLAUDE.md            — always-loaded primer (working style, engineering rules)
 docs/
-  PLAN.md            — master action list (milestones, conventions, status)
+  README.md          — doc-folder index: roles, hierarchy, conventions
+  PLAN.md            — master action list (milestones, current status, deferred decisions)
   ProductSpec.md     — master spec (vocabulary, principles, behaviors)
   BACKLOG.md         — work for releases after the current target
   FINDINGS.md        — numbered observation log
@@ -42,7 +43,7 @@ docs/
 - **Milestones carry deadlines** (approximate is fine, marked with `~`).
 - **CLAUDE.md sits above the spec/action split** as the always-loaded primer — anything that should be in context regardless of which part of the project you're working on.
 
-Full convention text lives in `docs/PLAN.md` § Conventions.
+Full convention text lives in [`docs/README.md`](docs/README.md). `docs/PLAN.md` itself is kept lean — it's the operational dashboard, not a reference manual.
 
 ## Refresh / migration
 
