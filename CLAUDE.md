@@ -39,6 +39,8 @@ Otherwise delete this comment and the `.agents/` folder.
 3. When the user asks for input/feedback ("what do you think?", "should we…?"), answer first; don't change files until they confirm.
 4. Use the system date for any dated docs.
 5. Don't merge with a dirty tree or unpushed commits without explicit confirmation.
+6. After landing or substantively editing an execution doc (milestone, arc, worklist), pause for owner review and explicit approval before any implementation work. Don't infer approval from silence or from soft-go signals you wrote yourself.
+7. Execute work items in document order. Same-level parallel work is fine when items have no stated dependency. Reordering, or starting a later item before an earlier one — even when it seems like a prerequisite — needs explicit per-item approval. A doc that proposes a reorder remains a proposal until the owner confirms at execution time.
 
 ## Branch & Repo
 1. New milestone-scoped work: `M##-<slug>` (uppercase M, no padding). Example: `M02-keyboard-nav`.
