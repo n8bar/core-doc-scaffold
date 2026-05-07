@@ -11,6 +11,13 @@ Changes to the `core-doc-scaffold` template over time. When the pattern evolves,
 
 ## Changelog
 
+### 2026-05-07 — Tighten heading and item-numbering conventions
+Two tightenings to `docs/README.md` § Numbering:
+- §1.2: Arc headings inside a milestone doc must use the local number only (`### 1 — <name>`), not the full dotted form (`### m02.01 — <name>`).
+- §1.4: Items must not prefix themselves with their own dotted reference. Position in the doc gives the reference; self-labels are forbidden. Cross-references between items remain fine.
+
+To retrofit: scan your milestone docs for `### m##.NN —` Arc headings and `**m##.NN.NN** —` item prefixes; convert to `### N —` and drop the prefix.
+
 ### 2026-05-06 — Slim PLAN, conventions moved to `docs/README.md`
 PLAN.md was carrying ~80 lines of structural reference (Doc Roles, hierarchy diagram, numbering, doc layout, specs-vs-actions, branches, repo, deadlines) ahead of operational content (Current, Milestones). Opening PLAN to "get to work" meant scrolling past the reference block every time.
 
