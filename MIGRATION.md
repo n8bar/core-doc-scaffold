@@ -11,6 +11,11 @@ Changes to the `core-doc-scaffold` template over time. When the pattern evolves,
 
 ## Changelog
 
+### 2026-05-07 — Constrain checkboxes to actionable items
+Added a clause to `docs/README.md` §1.4: checkboxes (`[ ]` / `[x]`) attach only to actionable items, never to action-list titles or headings (Milestone, Arc, Worklist) at any level. PLAN.md's milestone Status columns are still allowed because they sit on milestone rows, not on titles.
+
+To retrofit: scan your milestone/arc/worklist headings for stray `[ ]` prefixes and remove them.
+
 ### 2026-05-07 — Tighten heading and item-numbering conventions
 Two tightenings to `docs/README.md` § Numbering:
 - §1.2: Arc headings inside a milestone doc must use the local number only (`### 1 — <name>`), not the full dotted form (`### m02.01 — <name>`).
