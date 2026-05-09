@@ -11,6 +11,15 @@ Changes to the `core-doc-scaffold` template over time. When the pattern evolves,
 
 ## Changelog
 
+### 2026-05-08 — Findings conventions: rule 7 (pre-scoped not findings) + rules 6/8 (promotion definition + inline-fix path)
+Four related changes to `docs/FINDINGS.md`:
+- Rule 2 (status definitions) now points at rule 6 for the precise meaning of `promoted`.
+- Rule 6 (promotion) sharpened: a finding is `promoted` when an unchecked action item in some milestone/worklist owns the fix at the moment the status flips.
+- New rule 7: pre-scoped refinements are not findings. If an upcoming milestone/arc already explicitly covers a gap, don't log it as a finding — it's already on the list. The findings doc is for surprises, not for re-stating known work.
+- New rule 8: two paths to a fix. Promote (action list owns the fix description) or fix inline (the finding owns the fix description via `**[ ] fix:**` ↔ `**[x] fix:**` checkbox). Inline can escalate to promotion if scope grows.
+
+To retrofit: copy the rule 2/6 wording and the rule 7/8 entries from the current `docs/FINDINGS.md`. No data migration; no existing findings need rework.
+
 ### 2026-05-07 — Constrain checkboxes to actionable items
 Added a clause to `docs/README.md` §1.4: checkboxes (`[ ]` / `[x]`) attach only to actionable items, never to action-list titles or headings (Milestone, Arc, Worklist) at any level. PLAN.md's milestone Status columns are still allowed because they sit on milestone rows, not on titles.
 
