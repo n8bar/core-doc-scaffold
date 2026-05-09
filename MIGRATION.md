@@ -11,6 +11,13 @@ Changes to the `core-doc-scaffold` template over time. When the pattern evolves,
 
 ## Changelog
 
+### 2026-05-08 — Removed `docs/FINDINGS.md` from default
+The scaffold no longer ships a `FINDINGS.md` template. Most projects use a hosted platform's issue tracker (GitHub Issues, GitLab Issues, Gitea Issues, etc.) and a markdown findings log is just noise alongside it. Projects that genuinely want doc-as-code findings (bare self-hosted git, doc-as-code purists, or a deliberate stylistic choice) can restore the previous template and its conventions from this repo's git history at commit `dd7d47e` — that commit's `docs/FINDINGS.md` had eight refined rules (status workflow, no-pre-scoped-noise, two paths to a fix).
+
+`docs/README.md` no longer lists FINDINGS under § Other level-1 docs.
+
+To retrofit: delete your project's `docs/FINDINGS.md` if you don't use it; remove its entry from `docs/README.md`. Existing projects that have findings tracked there can keep the file with no change.
+
 ### 2026-05-08 — Findings conventions: rule 7 (pre-scoped not findings) + rules 6/8 (promotion definition + inline-fix path)
 Four related changes to `docs/FINDINGS.md`:
 - Rule 2 (status definitions) now points at rule 6 for the precise meaning of `promoted`.
